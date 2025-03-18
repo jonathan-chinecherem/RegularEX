@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegEx</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./signup.html">sign up</a>
+        <a href="./login.html">log in</a>
+    </nav>
+
+    <div class="register">
+        <h2>Register</h2>
+        <form id="userForm">
+            <input type="text" id="fullName" placeholder="Full name" required><br>
+            <div class="error" id="fullNameError"></div>
+    
+            <input type="text" id="userName" placeholder="User name" required><br>
+            <div class="error" id="userNameError"></div>
+    
+            <input type="email" id="email" placeholder="Email address" required><br>
+            <div class="error" id="emailError"></div>
+    
+            <input type="text" id="password" placeholder="Password" required><br>
+            <div class="error" id="passwordError"></div>
+    
+            <input type="text" id="confirmPassword" placeholder="Confirm Password" required><br>
+            <div class="error" id="confirmPasswordError"></div>
+    
+            <button type="submit" onclick="validateForm()">Submit</button>
+        </form>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
